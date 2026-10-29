@@ -3,7 +3,8 @@
 The `statistics/*` commands return listening statistics built from the play history. Every
 command needs the `library:read` scope and only covers the plays of the authenticated user.
 
-Older servers do not have these commands and answer them with an unknown-command error.
+These commands require API schema version 100 or newer. Older servers may expose an earlier
+version of the statistics API with incomplete results.
 
 ## Commands
 
